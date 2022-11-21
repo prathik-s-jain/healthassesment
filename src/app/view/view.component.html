@@ -1,0 +1,56 @@
+<header>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <body id="myPage">
+<div class="w3-top">
+  <div class="w3-bar w3-theme-d2 w3-left-align">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+    <a class="w3-bar-item w3-button w3-coral"><i class="fa fa-home w3-margin-right"></i>Health Club</a>
+    <a [routerLink]="['/Welcome']"class="w3-bar-item w3-button w3-hide-small w3-hover-white">Home</a>
+    <a [routerLink]="['/Place']" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Place Appointment</a>
+    <a [routerLink]="['/View']" class="w3-bar-item w3-button w3-hide-small w3-hover-white">View Appointment</a>
+    <a [routerLink]="['/Contact']"class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact Us</a>
+    </div>
+<router-outlet></router-outlet>
+</div>
+<div class="w3-display-left">
+  <table border="2px">
+    <br>
+    <br><br>
+    <br>
+    <br>
+    <tr>
+        
+    <td> sno <td>name <td> phone <td>age <td>address <td>trainer preference <td>physic req <td>package <td>total</tr>
+    <tr> <td>1 <td>pj</td> <td>9988776655</td> <td>99</td> <td>chennai</td> <td>lan</td> <td>old</td> <td>tiii</td> <td>88998</td>
+    
+    </tr>
+    </table>
+</div>
+<div class="w3-display-bottomright">
+<table class="w3-table">
+  <tr>
+    <th>Useful links</th>
+    <th>Contact</th>
+</tr>
+<tr>
+  <td><a [routerLink]="['/Place']" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Place Appointment</a>
+  <td>Dr.Mehta, happy health  </tr>
+  <tr>
+    <td><a [routerLink]="['/View']" class="w3-bar-item w3-button w3-hide-small w3-hover-white">View Appointment</a>
+  <td><a href="healthub@gmail.com">happyhealth@gmail.com</a>
+</tr>
+<tr>
+  <td><a [routerLink]="['/Contact']" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Query</a>
+<td>Contact : +91 9988776655</td>
+</tr>
+</table>
+</div>
+<div class="w3-display-bottommiddle">
+<p class="footer">All Rights Reserved</p>
+</div>
+</body>
+</header>

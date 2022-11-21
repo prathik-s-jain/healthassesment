@@ -1,0 +1,87 @@
+<header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <body id="myPage">
+  <div class="w3-top">
+    <div class="w3-bar w3-theme-d2 w3-left-align">
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+        <a class="w3-bar-item w3-button w3-coral"><i class="fa fa-home w3-margin-right"></i>Health Club</a>
+        <a [routerLink]="['/Welcome']"class="w3-bar-item w3-button w3-hide-small w3-hover-white">Home</a>
+        <a [routerLink]="['/Place']" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Place Appointment</a>
+        <a [routerLink]="['/View']" class="w3-bar-item w3-button w3-hide-small w3-hover-white">View Appointment</a>
+        <a [routerLink]="['/Contact']"class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact Us</a>
+        </div>
+  <router-outlet></router-outlet>
+  </div>
+  <div class="w3-responsive">
+    <div class="container-fluid">
+        <div class="row">
+            <div ><b> Name</b> </div> 
+            <div class="col-lg-4"><input type="text"
+            class="col-lg-1"><b> Age</b>
+            <input type="text"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-lg-1"><b> email</b>
+            <input type="text" ><b> phone </b>
+            <input type="text" size=""></div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-1"><b> Address Line 1</b> </div>
+            <div class="col-lg-10"><input type="text" size="100"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1"><b> Address Line 2</b> </div>
+            <div class="col-lg-10"><input type="text" size="100"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-lg-1"><b> City</b>
+            <input type="text" ><b> State</b>
+            <input type="text" size=""></div>
+        </div>
+        
+        <div class="row">
+            <br>
+            <div class="row">
+                <div class="col-lg-1"><b> country </b>
+                <input type="text" ><b> pincode </b>
+                <input type="text" size=""></div>
+            </div>
+            <div class="row">
+                <b> Trainer preference </b><br>
+                <input type="checkbox" id="T_gender" name="male" value="male">
+                <label for="male"> male      </label>
+                <input type="checkbox" id="T_gender" name="female" value="female">
+                <label for="female"> female</label><br>
+            </div>
+            <div class="row">
+               <b> Do you need psycotherapist </b><br>
+                <input type="checkbox" id="yes" name="yes" value="yes">
+                <label for="yes"> yes     </label>
+                <input type="checkbox" id="no" name="no" value="no">
+                <label for="no">no </label>
+            </div>
+            <div class="row">
+              <b>  Select a package </b><br>
+                <input type="checkbox" id="package" name="package" value="a">
+                <label for="a">one time appointment (rs.500 )     </label> <br>
+                <input type="checkbox" id="package" name="package" value="b">
+                <label for="b">4 sessions per week (rs.400 per session )</label> <br>
+                <input type="checkbox" id="package" name="package" value="c">
+                <label for="c">5 sessions per week (rs.300 per session ) </label> <br>
+            </div>
+            <div class="row">
+                <div class="col-lg-1"><b>weeks and amount </b>
+                <input type="text" >
+                </div>
+                <input type="submit" value="Submit">
+        </div>
+        </div>  
+        </div>  
+ 
